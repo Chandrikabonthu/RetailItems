@@ -11,7 +11,10 @@ import { CounterComponent } from './counter/counter.component';
 import { FetchDataComponent } from './fetch-data/fetch-data.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
-import { ForgetPasswordComponent } from './forget-password/forget-password.component';
+
+import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
+import { ShoppingMenuComponent } from './shopping-menu/shopping-menu.component';
+
 
 @NgModule({
   declarations: [
@@ -22,14 +25,21 @@ import { ForgetPasswordComponent } from './forget-password/forget-password.compo
     FetchDataComponent,
     LoginComponent,
     RegisterComponent,
-    ForgetPasswordComponent
+   
+    ForgotPasswordComponent,
+    ShoppingMenuComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
     HttpClientModule,
     FormsModule,
     RouterModule.forRoot([
-      { path: '', component: LoginComponent, pathMatch: 'full' },
+      { path: '', component: HomeComponent, pathMatch: 'full' },
+      {path:'signup',component:RegisterComponent},
+      {path:'login',component:LoginComponent},
+      {path:'cancel',component:HomeComponent},
+      
+      {path:'menu',component:ShoppingMenuComponent}
     
     ])
   ],
