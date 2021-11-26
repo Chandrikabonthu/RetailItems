@@ -11,9 +11,8 @@ import { CounterComponent } from './counter/counter.component';
 import { FetchDataComponent } from './fetch-data/fetch-data.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
-
-import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
 import { ShoppingMenuComponent } from './shopping-menu/shopping-menu.component';
+import { ForgotComponent } from './forgot/forgot.component';
 
 
 @NgModule({
@@ -25,9 +24,8 @@ import { ShoppingMenuComponent } from './shopping-menu/shopping-menu.component';
     FetchDataComponent,
     LoginComponent,
     RegisterComponent,
-   
-    ForgotPasswordComponent,
-    ShoppingMenuComponent
+    ShoppingMenuComponent,
+    ForgotComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
@@ -38,6 +36,7 @@ import { ShoppingMenuComponent } from './shopping-menu/shopping-menu.component';
       {path:'signup',component:RegisterComponent},
       {path:'login',component:LoginComponent},
       {path:'cancel',component:HomeComponent},
+       {path:'forgot',component:ForgotComponent},
       
       {path:'menu',component:ShoppingMenuComponent}
     
