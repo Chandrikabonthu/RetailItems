@@ -1,34 +1,49 @@
-Body {  
+ Body {  
   font-family: Calibri, Helvetica, sans-serif;  
-  background-color: pink;  
+  background-color: pink;
+  width: 60%;  
+ margin-left: 20%;
 }  
 button {   
-       background-color: #4CAF50;   
-       width: 100%;  
+       background-color: #7a4caf;   
+       width: 15%;  
         color: orange;   
         padding: 15px;   
-        margin: 10px 0px;   
+       margin-left: 30%; 
         border: none;   
         cursor: pointer;   
          }   
  form {   
         border: 3px solid #f1f1f1;   
+       
     }   
- input[type=text], input[type=password] {   
-        width: 100%;   
-        margin: 8px 0;  
-        padding: 12px 20px;   
+ input[type=text]{   
+        width: 50%;   
+        margin: 8px 0; 
+        margin-left: 6%; 
+        padding: 10px 10px;   
         display: inline-block;   
         border: 2px solid green;   
         box-sizing: border-box;   
-    }  
+        text-align: center;
+    } 
+   input[type=password] {   
+      width: 50%;   
+      margin: 8px 0; 
+      margin-left: 5%; 
+      padding: 12px 20px;   
+      display: inline-block;   
+      border: 2px solid green;   
+      box-sizing: border-box;   
+      text-align: center;
+  }  
  button:hover {   
         opacity: 0.7;   
     }   
   .cancelbtn {   
         width: auto;   
         padding: 10px 18px;  
-        margin: 10px 5px;  
+       margin-left: 1%;
     }   
         
     Body {  
@@ -37,5 +52,5 @@ button {
       }  
  .container {   
         padding: 25px;   
-        background-color: lightblue;  
-    }   
+        background-color:white;  
+    }    
