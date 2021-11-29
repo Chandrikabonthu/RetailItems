@@ -1,6 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
@@ -13,6 +12,8 @@ import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { ShoppingMenuComponent } from './shopping-menu/shopping-menu.component';
 import { ForgotComponent } from './forgot/forgot.component';
+import { MatButtonModule, MatDividerModule, MatIconModule, MatSidenavModule, MatToolbarModule } from '@angular/material';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 @NgModule({
@@ -28,6 +29,11 @@ import { ForgotComponent } from './forgot/forgot.component';
     ForgotComponent
   ],
   imports: [
+    MatToolbarModule,
+    MatSidenavModule,
+    MatButtonModule,
+    MatIconModule,
+    MatDividerModule,
     ReactiveFormsModule,
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
     HttpClientModule,
@@ -38,10 +44,10 @@ import { ForgotComponent } from './forgot/forgot.component';
       {path:'login',component:LoginComponent},
       {path:'cancel',component:HomeComponent},
        {path:'forgot',component:ForgotComponent},
-      
       {path:'menu',component:ShoppingMenuComponent}
     
-    ])
+    ]),
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
