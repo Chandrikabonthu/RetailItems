@@ -12,8 +12,9 @@ import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { ShoppingMenuComponent } from './shopping-menu/shopping-menu.component';
 import { ForgotComponent } from './forgot/forgot.component';
-import { MatButtonModule, MatDividerModule, MatIconModule, MatSidenavModule, MatToolbarModule } from '@angular/material';
+import { MatButtonModule, MatDividerModule, MatIconModule, MatNavList, MatSidenavModule, MatToolbarModule } from '@angular/material';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 
 
 @NgModule({
@@ -26,7 +27,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     LoginComponent,
     RegisterComponent,
     ShoppingMenuComponent,
-    ForgotComponent
+    ForgotComponent,
+  
   ],
   imports: [
     MatToolbarModule,
@@ -44,7 +46,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
       {path:'login',component:LoginComponent},
       {path:'cancel',component:HomeComponent},
        {path:'forgot',component:ForgotComponent},
-      {path:'menu',component:ShoppingMenuComponent}
+      {path:'menu',component:ShoppingMenuComponent},
+      {path:'logout',component:LoginComponent},
+    
     
     ]),
     BrowserAnimationsModule
