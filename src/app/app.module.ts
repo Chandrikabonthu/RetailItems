@@ -14,6 +14,11 @@ import { ShoppingMenuComponent } from './shopping-menu/shopping-menu.component';
 import { ForgotComponent } from './forgot/forgot.component';
 import { MatButtonModule, MatDividerModule, MatIconModule, MatNavList, MatSidenavModule, MatToolbarModule } from '@angular/material';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { SigninComponent } from './signin/signin.component';
+import { VegComponent } from './veg/veg.component';
+import { OrderdComponent } from './orderd/orderd.component';
+import { DallItemsComponent } from './dall-items/dall-items.component';
+import { SoapComponent } from './soap/soap.component';
 
 
 
@@ -28,6 +33,11 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     RegisterComponent,
     ShoppingMenuComponent,
     ForgotComponent,
+    SigninComponent,
+    VegComponent,
+    OrderdComponent,
+    DallItemsComponent,
+    SoapComponent,
   
   ],
   imports: [
@@ -47,7 +57,12 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
       {path:'cancel',component:HomeComponent},
        {path:'forgot',component:ForgotComponent},
       {path:'menu',component:ShoppingMenuComponent},
-      {path:'logout',component:LoginComponent},
+      {path:'',component:HomeComponent},
+      {path:'veg',component:VegComponent},
+      {path:'order',component:OrderdComponent},
+      {path:'dall',component:DallItemsComponent},
+      {path:'soap',component:SoapComponent}
+
     
     
     ]),

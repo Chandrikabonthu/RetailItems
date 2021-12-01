@@ -7,19 +7,19 @@
     <form style="margin-left: 40%;margin-top: 30px;"  [formGroup]="angForm" novalidate>
           <div class="form-group">
               <label>EmailId:</label>
-              <input style="width: 40%;" class="form-control" formControlName="name" type="text">
+              <input style="width: 40%;" class="form-control" formControlName="email"  type="email">
           </div>
-          <div *ngIf="angForm.controls['name'].invalid && (angForm.controls['name'].dirty || angForm.controls['name'].touched)" class="alert alert-danger">
-              <div *ngIf="angForm.controls['name'].errors.required">
+          <div *ngIf="angForm.controls['email'].invalid && (angForm.controls['email'].dirty || angForm.controls['name'].touched)" class="alert alert-danger">
+              <div *ngIf="angForm.controls['email'].errors.required">
                 email is required.
               </div>
           </div>
            <div class="form-group">
               <label>Password:</label>
-              <input  style="width: 40%;" class="form-control" formControlName="address" type="text">
+              <input  style="width: 40%;" class="form-control" formControlName="pwd" type="password">
           </div>
-          <div *ngIf="angForm.controls['address'].invalid && (angForm.controls['address'].dirty || angForm.controls['address'].touched)" class="alert alert-danger">
-              <div *ngIf="angForm.controls['address'].errors.required">
+          <div *ngIf="angForm.controls['pwd'].invalid && (angForm.controls['pwd'].dirty || angForm.controls['address'].touched)" class="alert alert-danger">
+              <div *ngIf="angForm.controls['pwd'].errors.required">
                 password is required.
               </div>
           </div>

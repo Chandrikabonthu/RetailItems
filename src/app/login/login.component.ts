@@ -9,25 +9,19 @@ import { Router } from '@angular/router';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
-   
-  data = {};
-  loginForm: FormGroup;
-  constructor(private formBuilder: FormBuilder,public router: Router){};
+  title = 'Angular Form Validation Tutorial';
+  angForm: FormGroup;
+  constructor(private fb: FormBuilder) {
+   this.createForm();
+ }
+ ngOnInit() {
  
-  ngOnInit() {
-    this.loginForm = this.formBuilder.group({
-    uname:['',[Validators.required]],
-    pwd:['',[Validators.required]],
-    });
-  }
-  loginDetails(formdetails) {
-    if (formdetails.uname && formdetails.pwd) {
-    alert('Login successful');
-    this.router.navigate(['login']);
-    }
-    else {
-      alert('please check the Details');
-
-    }
-  }
+ }
+  createForm() {
+   this.angForm = this.fb.group({
+      name: ['', Validators.required ],
+      address: ['', Validators.required ]
+   });
+ }
+   
 }
