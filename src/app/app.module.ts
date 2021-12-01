@@ -14,7 +14,6 @@ import { ShoppingMenuComponent } from './shopping-menu/shopping-menu.component';
 import { ForgotComponent } from './forgot/forgot.component';
 import { MatButtonModule, MatDividerModule, MatIconModule, MatNavList, MatSidenavModule, MatToolbarModule } from '@angular/material';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
 import { VegComponent } from './veg/veg.component';
 import { OrderdComponent } from './orderd/orderd.component';
 import { DallItemsComponent } from './dall-items/dall-items.component';
