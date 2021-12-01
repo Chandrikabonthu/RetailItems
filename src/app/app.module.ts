@@ -14,13 +14,11 @@ import { ShoppingMenuComponent } from './shopping-menu/shopping-menu.component';
 import { ForgotComponent } from './forgot/forgot.component';
 import { MatButtonModule, MatDividerModule, MatIconModule, MatNavList, MatSidenavModule, MatToolbarModule } from '@angular/material';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { SigninComponent } from './signin/signin.component';
+
 import { VegComponent } from './veg/veg.component';
 import { OrderdComponent } from './orderd/orderd.component';
 import { DallItemsComponent } from './dall-items/dall-items.component';
 import { SoapComponent } from './soap/soap.component';
-
-
 
 @NgModule({
   declarations: [
@@ -33,7 +31,7 @@ import { SoapComponent } from './soap/soap.component';
     RegisterComponent,
     ShoppingMenuComponent,
     ForgotComponent,
-    SigninComponent,
+  
     VegComponent,
     OrderdComponent,
     DallItemsComponent,
@@ -63,8 +61,6 @@ import { SoapComponent } from './soap/soap.component';
       {path:'dall',component:DallItemsComponent},
       {path:'soap',component:SoapComponent}
 
-    
-    
     ]),
     BrowserAnimationsModule
   ],

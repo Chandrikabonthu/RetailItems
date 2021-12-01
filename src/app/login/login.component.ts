@@ -19,8 +19,8 @@ export class LoginComponent implements OnInit {
  }
   createForm() {
    this.angForm = this.fb.group({
-      name: ['', Validators.required ],
-      address: ['', Validators.required ]
+      email: ['', Validators.required ],
+      pwd: ['', Validators.required ]
    });
  }
    
